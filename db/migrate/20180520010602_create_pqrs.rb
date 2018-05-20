@@ -7,6 +7,7 @@ class CreatePqrs < ActiveRecord::Migration[5.2]
       t.string :phone
       t.text :description
       t.date :creation_date
+   #   add_column("pqrs","state_id","string")
 
       t.timestamps
     end

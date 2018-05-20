@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_20_043012) do
+ActiveRecord::Schema.define(version: 2018_05_20_075312) do
 
   create_table "answers", force: :cascade do |t|
     t.text "comment"
@@ -25,6 +25,12 @@ ActiveRecord::Schema.define(version: 2018_05_20_043012) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "homes", force: :cascade do |t|
+    t.integer "lugar"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "pqrs", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -34,6 +40,8 @@ ActiveRecord::Schema.define(version: 2018_05_20_043012) do
     t.date "creation_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "state_id"
+    t.index ["state_id"], name: "index_pqrs_on_state_id"
   end
 
   create_table "responsables", force: :cascade do |t|
@@ -64,6 +72,8 @@ ActiveRecord::Schema.define(version: 2018_05_20_043012) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "first_name"
+    t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

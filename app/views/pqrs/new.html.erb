@@ -1,5 +1,8 @@
-<h1>New Pqr</h1>
+<div class="container">
+    <h1>New Pqr</h1>
+    
+    <%= render 'form', pqr: @pqr %>
+    
+    <%= link_to 'Back', pqrs_path %>
 
-<%= render 'form', pqr: @pqr %>
-
-<%= link_to 'Back', pqrs_path %>
+</div>
