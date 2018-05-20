@@ -5,15 +5,13 @@ one:
   last_name: MyString
   email: MyString
   phone: MyString
-  description: MyString
-  creation_date: 2018-05-19
-  state: false
+  description: MyText
+  creation_date: 2018-05-20
 
 two:
   first_name: MyString
   last_name: MyString
   email: MyString
   phone: MyString
-  description: MyString
-  creation_date: 2018-05-19
-  state: false
+  description: MyText
+  creation_date: 2018-05-20

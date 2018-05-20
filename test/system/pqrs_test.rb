@@ -20,7 +20,6 @@ class PqrsTest < ApplicationSystemTestCase
     fill_in "First Name", with: @pqr.first_name
     fill_in "Last Name", with: @pqr.last_name
     fill_in "Phone", with: @pqr.phone
-    fill_in "State", with: @pqr.state
     click_on "Create Pqr"
 
     assert_text "Pqr was successfully created"
@@ -37,7 +36,6 @@ class PqrsTest < ApplicationSystemTestCase
     fill_in "First Name", with: @pqr.first_name
     fill_in "Last Name", with: @pqr.last_name
     fill_in "Phone", with: @pqr.phone
-    fill_in "State", with: @pqr.state
     click_on "Update Pqr"
 
     assert_text "Pqr was successfully updated"

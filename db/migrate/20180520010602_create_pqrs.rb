@@ -5,9 +5,8 @@ class CreatePqrs < ActiveRecord::Migration[5.2]
       t.string :last_name
       t.string :email
       t.string :phone
-      t.string :description
+      t.text :description
       t.date :creation_date
-      t.boolean :state
 
       t.timestamps
     end
