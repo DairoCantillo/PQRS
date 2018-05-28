@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2018_05_28_191530) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "permission_roles", id: false, force: :cascade do |t|
+  create_table "permission_roles", force: :cascade do |t|
     t.integer "permission_id"
     t.integer "role_id"
     t.datetime "created_at", null: false
