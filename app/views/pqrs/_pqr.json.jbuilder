@@ -1,2 +1,2 @@
-json.extract! pqr, :id, :first_name, :last_name, :email, :phone, :description, :creation_date, :created_at, :state_id, :
+json.extract! pqr, :id, :doc_id, :first_name, :last_name, :email, :title, :subject, :description, :date, :reponse_Date, :created_at, :updated_at
 json.url pqr_url(pqr, format: :json)

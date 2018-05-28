@@ -1,17 +1,23 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  doc: one
   first_name: MyString
   last_name: MyString
   email: MyString
-  phone: MyString
+  title: MyString
+  subject: MyString
   description: MyText
-  creation_date: 2018-05-20
+  date: 2018-05-28 17:18:17
+  reponse_Date: 2018-05-28 17:18:17
 
 two:
+  doc: two
   first_name: MyString
   last_name: MyString
   email: MyString
-  phone: MyString
+  title: MyString
+  subject: MyString
   description: MyText
-  creation_date: 2018-05-20
+  date: 2018-05-28 17:18:17
+  reponse_Date: 2018-05-28 17:18:17

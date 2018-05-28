@@ -14,12 +14,15 @@ class PqrsTest < ApplicationSystemTestCase
     visit pqrs_url
     click_on "New Pqr"
 
-    fill_in "Creation Date", with: @pqr.creation_date
+    fill_in "Date", with: @pqr.date
     fill_in "Description", with: @pqr.description
+    fill_in "Doc", with: @pqr.doc_id
     fill_in "Email", with: @pqr.email
     fill_in "First Name", with: @pqr.first_name
     fill_in "Last Name", with: @pqr.last_name
-    fill_in "Phone", with: @pqr.phone
+    fill_in "Reponse Date", with: @pqr.reponse_Date
+    fill_in "Subject", with: @pqr.subject
+    fill_in "Title", with: @pqr.title
     click_on "Create Pqr"
 
     assert_text "Pqr was successfully created"
@@ -30,12 +33,15 @@ class PqrsTest < ApplicationSystemTestCase
     visit pqrs_url
     click_on "Edit", match: :first
 
-    fill_in "Creation Date", with: @pqr.creation_date
+    fill_in "Date", with: @pqr.date
     fill_in "Description", with: @pqr.description
+    fill_in "Doc", with: @pqr.doc_id
     fill_in "Email", with: @pqr.email
     fill_in "First Name", with: @pqr.first_name
     fill_in "Last Name", with: @pqr.last_name
-    fill_in "Phone", with: @pqr.phone
+    fill_in "Reponse Date", with: @pqr.reponse_Date
+    fill_in "Subject", with: @pqr.subject
+    fill_in "Title", with: @pqr.title
     click_on "Update Pqr"
 
     assert_text "Pqr was successfully updated"

@@ -15,7 +15,6 @@ class PqrsController < ApplicationController
   # GET /pqrs/new
   def new
     @pqr = Pqr.new
-    @states = State.all
   end
 
   # GET /pqrs/1/edit
@@ -70,6 +69,6 @@ class PqrsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pqr_params
-      params.require(:pqr).permit(:first_name, :last_name, :email, :phone, :description, :creation_date, :state_id)
+      params.require(:pqr).permit(:doc_id, :first_name, :last_name, :email, :title, :subject, :description, :date, :reponse_Date)
     end
 end

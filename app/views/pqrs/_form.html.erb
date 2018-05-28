@@ -10,47 +10,53 @@
       </ul>
     </div>
   <% end %>
-  <div>
-    <div>
-      <div class="field">
-        <%= form.label :first_name %>
-        <%= form.text_field :first_name %>
-      </div>
-    
-      <div class="field">
-        <%= form.label :last_name %>
-        <%= form.text_field :last_name %>
-      </div>
-    
-      <div class="field">
-        <%= form.label :email %>
-        <%= form.text_field :email %>
-      </div>
-    
-      <div class="field">
-        <%= form.label :state_id %>
-        <%= form.number_field :state_id %>
-      </div>
-      
-      <div class="field">
-        <%= form.label :phone %>
-        <%= form.text_field :phone %>
-      </div>
-    
-      <div class="field">
-        <%= form.label :description %>
-        <%= form.text_area :description %>
-      </div>
-    
-      <div class="field">
-        <%= form.label :creation_date %>
-        <%= form.date_select :creation_date %>
-      </div>
-    
-      <div class="actions waves-effect waves-light btn">
-        <%= form.submit %>
-      </div>
-  </div>
+
+  <div class="field">
+    <%= form.label :doc_id %>
+    <%= form.text_field :doc_id %>
   </div>
 
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :subject %>
+    <%= form.text_field :subject %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reponse_Date %>
+    <%= form.datetime_select :reponse_Date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
 <% end %>

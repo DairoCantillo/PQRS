@@ -17,7 +17,7 @@ class PqrsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create pqr" do
     assert_difference('Pqr.count') do
-      post pqrs_url, params: { pqr: { creation_date: @pqr.creation_date, description: @pqr.description, email: @pqr.email, first_name: @pqr.first_name, last_name: @pqr.last_name, phone: @pqr.phone } }
+      post pqrs_url, params: { pqr: { date: @pqr.date, description: @pqr.description, doc_id: @pqr.doc_id, email: @pqr.email, first_name: @pqr.first_name, last_name: @pqr.last_name, reponse_Date: @pqr.reponse_Date, subject: @pqr.subject, title: @pqr.title } }
     end
 
     assert_redirected_to pqr_url(Pqr.last)
@@ -34,7 +34,7 @@ class PqrsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update pqr" do
-    patch pqr_url(@pqr), params: { pqr: { creation_date: @pqr.creation_date, description: @pqr.description, email: @pqr.email, first_name: @pqr.first_name, last_name: @pqr.last_name, phone: @pqr.phone } }
+    patch pqr_url(@pqr), params: { pqr: { date: @pqr.date, description: @pqr.description, doc_id: @pqr.doc_id, email: @pqr.email, first_name: @pqr.first_name, last_name: @pqr.last_name, reponse_Date: @pqr.reponse_Date, subject: @pqr.subject, title: @pqr.title } }
     assert_redirected_to pqr_url(@pqr)
   end
 

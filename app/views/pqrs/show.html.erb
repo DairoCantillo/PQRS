@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Doc:</strong>
+  <%= @pqr.doc %>
+</p>
+
+<p>
   <strong>First name:</strong>
   <%= @pqr.first_name %>
 </p>
@@ -16,8 +21,13 @@
 </p>
 
 <p>
-  <strong>Phone:</strong>
-  <%= @pqr.phone %>
+  <strong>Title:</strong>
+  <%= @pqr.title %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @pqr.subject %>
 </p>
 
 <p>
@@ -26,8 +36,13 @@
 </p>
 
 <p>
-  <strong>Creation date:</strong>
-  <%= @pqr.creation_date %>
+  <strong>Date:</strong>
+  <%= @pqr.date %>
+</p>
+
+<p>
+  <strong>Reponse date:</strong>
+  <%= @pqr.reponse_Date %>
 </p>
 
 <%= link_to 'Edit', edit_pqr_path(@pqr) %> |

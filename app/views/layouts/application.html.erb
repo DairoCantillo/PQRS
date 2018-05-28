@@ -13,10 +13,17 @@
       <nav>
     <div class="nav-wrapper #64b5f6 blue lighten-2">
       <a href="#" class="brand-logo left">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/users/sign_in">Log In</a></li>
-        <li><a href="/users/sign_up">Sing Up</a></li>
-      </ul>
+        <% if user_signed_in? %>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <%= current_user.email %>
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+        </ul>
+        <% else %>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/users/sign_in">Log In</a></li>
+          <li><a href="/users/sign_up">Sing Up</a></li>
+        </ul>
+        <% end %>
     </div>
   </nav>
     <%= yield %>
@@ -45,5 +52,9 @@
             </div>
           </div>
         </footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="js/script.js"></script>
+
   </body>
 </html>

@@ -1,3 +1,3 @@
 class Pqr < ApplicationRecord
-    belongs_to :state
+  belongs_to :doc
 end
